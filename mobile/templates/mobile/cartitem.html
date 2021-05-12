@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{%extends 'mobile/base.html'%}
+{%block body_block%}
+
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <div class="main" >
+<!--            <h2></h2>-->
+            <br/><br/>
+            <form action="" method="post">
+                {%csrf_token%}
+                {{form.as_p}}
+                <input type="submit" value="Add To Cart" class="btn-btn-secondary">
+            </form>
+        </div>
+    </div>
+    <div class="col-4"></div>
+</div>
+{% endblock %}
